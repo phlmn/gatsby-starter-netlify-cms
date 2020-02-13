@@ -34,6 +34,13 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}"
     fields:
       - {label: "Date", name: "date", widget: "date"}
+      - label: Team
+        name: team
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Preis, name: price, widget: number}
+          - {label: Ext Preis, name: ext_price, widget: number}
 
   - name: "pages"
     label: "Pages"
